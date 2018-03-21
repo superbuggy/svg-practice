@@ -2,6 +2,7 @@
      height="320px" width="140px" >
   <title xml:lang="en">Stoplight</title>
   <g stroke="purple" stroke-width="3">
+    <!-- Geometric attributes aren't inheritied from a group tag -->
     <rect
       x="10"
       y="10"
