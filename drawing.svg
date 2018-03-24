@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
-     height="320px" width="140px" >
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xml:lang="en"
+  height="320px"
+  width="140px" 
+>
   <title xml:lang="en">Stoplight</title>
   <style type="text/css">
     rect, circle {
@@ -11,13 +16,15 @@
       stroke-width: 5;
     }
   </style>
-
+  <defs>
+    <circle id="light" cx="70" r="30" />
+  </defs>
   <rect
     x="10"
     y="10"
     width="120px"
     height="300px"
-    fill="rgb(214,178,0)"
+    fill="rgb(214, 178, 0)"
   />
 
   <rect
@@ -25,28 +32,12 @@
     y="20"
     width="100px"
     height="280px"
-    fill="rgb(234,198,0)"
+    fill="rgb(234, 198, 0)"
   />
-
-  <circle class="light"
-    cx="70"
-    cy="80"
-    r="30"
-    fill="rgba(255,0,0,.8)"
-  />
-
-  <circle class="light"
-    cx="70"
-    cy="160"
-    r="30"
-    fill="rgba(255,255,0,.6)"
-  />
-
-  <circle class="light"
-    cx="70"
-    cy="240"
-    r="30"
-    fill="rgba(0,255,0,.6)"
-  />
+  <g stroke="rgba(234, 198, 0)" srtoke-width="2">
+    <use xlink:href="#light" y="80" fill="rgba(255,0,0,.8)" />
+    <use xlink:href="#light" y="160" fill="rgba(255,255,0,.6)" />
+    <use xlink:href="#light" y="240" fill="rgba(0,255,0,.6)" />
+  </g>
 
 </svg>
